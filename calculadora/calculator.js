@@ -2,7 +2,7 @@ const readline = require("readline");
 
 const calculate = (num1, num2, operation) => {
   operation = operation.toLowerCase();
-  if (!num1 || !num2)
+  if (typeof +num1 !== 'number' || typeof +num2 !== 'number')
     return { result: null, error: "Please, insert valid numbers!" };
   const operations = {
     sum: (num1, num2) => +num1 + +num2,

@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1"
+  },
+  "name": "Injection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/slaycky/injection-example.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "create-database": "node src/infra/migration/create-database.js",
+    "create-tables": "node src/infra/migration/create-tables.js",
+    "create-seed": "node src/infra/migration/create-seed.js"
+  }
+}
